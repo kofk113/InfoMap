@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+}
+
+#tit{
+    width: 350px;
+    height: 10;
+    font-family: "D2cording";
+    font-size: 35px;
+    font-weight: bold;
+    color: #8A0808;
+    position: absolute; left: 0; top: 0;
+}
+#sidebar{
+    width:350px;
+    height:663.5px;
+    background-color: rgba(255, 200, 150, .2);
+    border-radius: 20px 0 0 20px;
+    position: absolute; left: 0; bottom: 0;
+    overflow:scroll;
+}
+
+#map{
+    width:77.2%;
+    height:663.5px;
+    position: absolute; left: 350px; bottom: 0;
+    border-radius: 0 20px 20px 0;
+}
+
+#btn{
+    position: absolute; left: 350px; top: 0;
+}
+
+#btn_group button{
+    background-color:#312DB5;
+    color: white;
+    padding: 5px 15px;
+    margin: 5px 10px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px gray;
+}
+
+#btn_group button:hover {
+    cursor: pointer;
+    background-color: #726dfa;
+}

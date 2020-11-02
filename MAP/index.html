@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광운대 정보 지도</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="all">
+        <div id="tit">
+            광운대학교 정보 지도
+        </div>
+        <div id="btn">
+            <div id="btn_group"> 
+                <button id="school">학교 건물</button>
+                <button id="restaurant">음식점</button>
+                <button id="restaurant">카페</button>
+                <button id="restaurant">PC방</button>
+                <button id="restaurant">노래방</button>
+                <button id="restaurant">편의점</button>
+                <button id="restaurant">은행</button>
+            </div>
+        </div>  
+        <div id="sidebar"></div>
+        <div id="map"></div>
+</div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f7cbc6015d5b7763b0bdbccc4d82e6ec"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(37.6207, 127.058),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+    </script>
+    <script src="Category.js"></script>
+
+
+
+</body>
+</html>
